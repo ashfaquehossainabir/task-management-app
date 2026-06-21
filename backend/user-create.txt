@@ -6,11 +6,3 @@ http://localhost:5000/api/auth/register
   "password": "123456",
   "role": "manager"
 }
-
-
-
-
-ENV_File
-
-MONGO_URI=mongodb+srv://ashfaquehossainabirr_db_user:3BrT0swNEvHaqnVh@cluster0.kw2i7db.mongodb.net/?appName=Cluster0
-JWT_SECRET=mysecretkey123
