@@ -426,6 +426,8 @@ export default function AdminDashboard() {
       </section>
 
       <section className="dashboard-section">
+        <h3 style={{ marginTop: "24px", marginBottom: "16px" }}>All Tasks</h3>
+
         {/* Task List */}
         { tasks.length === 0 ? (
                 <div className="no-task-box">
