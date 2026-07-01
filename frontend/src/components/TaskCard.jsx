@@ -20,6 +20,7 @@ export default function TaskCard({ task }) {
     task.status !== "done";
 
   const canEdit = user.role === "admin" || user.role === "manager";
+  const isEmployee = user.role === "employee";
 
   const getRemainingDays = (deadline) => {
     if (!deadline) return null;
@@ -121,6 +122,18 @@ export default function TaskCard({ task }) {
             Delete
           </button>
 
+          <button
+            className="view-btn"
+            onClick={() => setShowDetails(true)}
+          >
+            View Details
+          </button>
+        </div>
+      )}
+
+      {/* Employee only */}
+      {isEmployee && (
+        <div className="task-actions">
           <button
             className="view-btn"
             onClick={() => setShowDetails(true)}
