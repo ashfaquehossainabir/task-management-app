@@ -507,8 +507,13 @@
   font-weight: 600;
 }
 
+/* ===============================
+   Weekly Summary
+================================ */
+
 .weekly-summary {
   margin-top: 24px;
+  margin-bottom: 24px;
   background: #ffffff;
   border-radius: 12px;
   padding: 20px;
