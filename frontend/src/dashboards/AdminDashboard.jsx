@@ -638,7 +638,7 @@ export default function AdminDashboard() {
         { tasks.length === 0 ? (
                 <div className="no-task-box">
                   <h3>📭 No assigned tasks</h3>
-                  <p>Please wait until admin/employee assigns a task.</p>
+                  <p>Please wait until admin assigns a task.</p>
                 </div>
               ) : <div className="task-grid">
                     {filterTasks(tasks).map((task) => (
